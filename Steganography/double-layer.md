@@ -1,4 +1,4 @@
-# Double Layer
+# Double Bottom
 
 **Challenge title:** Double Fond  
 **Category:** Steganography  
