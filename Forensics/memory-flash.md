@@ -2,19 +2,13 @@
 
 **Challenge title:** Vidage de Mémoire  
 **Category:** Forensics  
-**Points:** 225  
 **Difficulty:** Extreme  
+**Points:** 225  
 **Author:** Perceval
-
-## Challenge
-
-The challenge provides a memory dump from the HR authentication service. The credentials are not stored as normal readable text. Instead, an `AUTHBLK` structure stores the token in an obscured form.
-
-The goal is to find this structure and recover the original token.
 
 ## File
 
-- `heap.dump` — memory dump
+- `heap.dump` — memory dump from the HR authentication service.
 
 ## Solution
 
@@ -48,14 +42,14 @@ At offset `0x2000`, the structure begins with:
 
 ```
 41 55 54 48 42 4c 4b 00 5a 2a 00 ...
- A  U  T  H  B  L  K \0  key len reserved
+ A  U  T  H  B  L  K \\0  key len reserved
 ```
 
 The structure is laid out as follows:
 
 | Bytes | Meaning |
 | --- | --- |
-| `AUTHBLK\0` | Structure marker |
+| `AUTHBLK\\0` | Structure marker |
 | `5A` | XOR key |
 | `2A` | Token length: 42 bytes |
 | `00` | Reserved byte |
@@ -88,12 +82,8 @@ The first few bytes demonstrate the process:
 
 Continue for all 42 bytes. The decoded text matches the length stored in the structure.
 
-### 6. Flag
+## Flag
 
 ```
 CyberZerk{c0r3_dump_struct_x0r_auth_bl0ck}
 ```
-
-## What I learned
-
-A memory dump can contain structured data even when most of its contents look random. Finding a structure marker, understanding its fields, and reversing a simple XOR operation can recover information that is not visible in plain text. Always distinguish real credentials from decoy data left in logs.
