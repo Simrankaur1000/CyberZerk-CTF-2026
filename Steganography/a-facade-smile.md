@@ -36,7 +36,7 @@ Binwalk detects a hidden ZIP archive attached to the image.
 At the end of the text file, we find the hidden flag:
 
 ```text
-CyberZerk{S0ur1r3_Pour_C4ch3r_L3_Burn0ut}
+CyberZerk{S0ur1r3_P0ur_C4ch3r_L3_Burn0ut}
 ```
 
 ## Flag
