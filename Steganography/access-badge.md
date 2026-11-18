@@ -1,9 +1,13 @@
 # Access Badge
 
 **Challenge title:** Badge d'Accès
+
 **Category:** Steganography
+
 **Points:** 62
+
 **Difficulty:** Easy
+
 **Author:** Perceval
 
 ## File
