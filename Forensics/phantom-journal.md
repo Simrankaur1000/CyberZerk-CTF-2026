@@ -5,9 +5,10 @@
 **Points:** 125  
 **Author:** Perceval
 
-## File
+## Files
 
 - `pointeuse.sqlite` — the SQLite database containing attendance records.
+- `README.txt` — the challenge instructions.
 
 ## Solution
 
