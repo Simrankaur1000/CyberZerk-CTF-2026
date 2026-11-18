@@ -1,6 +1,5 @@
 # Discreet Tunnel
-
-**Challenge title:** Tunnel Discret  
+ 
 **Category:** Forensics  
 **Points:** 175  
 **Difficulty:** Hard  
