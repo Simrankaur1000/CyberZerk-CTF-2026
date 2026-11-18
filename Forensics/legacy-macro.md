@@ -1,5 +1,7 @@
 # Legacy Macro
 
+**Challenge title:** Macro Héritée  
+
 **Category:** Forensics  
 **Difficulty:** Medium  
 **Points:** 125  
