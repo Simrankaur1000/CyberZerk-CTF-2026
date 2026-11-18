@@ -1,5 +1,7 @@
 # Fragments
 
+**Challenge title:** Fragments  
+
 **Category:** Forensics  
 **Points:** 150  
 **Difficulty:** Hard  
