@@ -1,5 +1,7 @@
 # Phantom Journal
 
+**Challenge title:** Journal Fantôme  
+
 **Category:** Forensics  
 **Difficulty:** Medium  
 **Points:** 125  
