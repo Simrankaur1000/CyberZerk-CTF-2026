@@ -1,4 +1,4 @@
-# Captured Keystrokes
+# Catches
 
 **Category:** Forensics  
 **Difficulty:** Medium  
