@@ -1,4 +1,4 @@
-# Marc's Photo Metadata
+# Trombinoscope
 
 **Challenge title:** Trombinoscope  
 **Category:** Steganography  
