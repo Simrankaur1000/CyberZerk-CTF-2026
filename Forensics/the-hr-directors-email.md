@@ -1,7 +1,6 @@
 # The HR Director's Email
 
 **Challenge title:** Mail du DRH  
-
 **Category:** Forensics  
 **Difficulty:** Easy  
 **Points:** 75  
