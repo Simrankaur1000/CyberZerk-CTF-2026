@@ -54,7 +54,7 @@ echo 'PloreMrex{E3c3e3_Yn_Z4avchy4g10a_E3fg3_Uhz41a}' | tr 'A-Za-z' 'N-ZA-Mn-za-
 The decoded result is:
 
 ```text
-CyberZerk{R3p3r3_La_M4nipul4t10n_R3st3_Hum41a}
+CyberZerk{R3p3r3_La_M4nipul4t10n_R3st3_Hum41n}
 ```
 
 It means: "Spot the manipulation, stay human."
