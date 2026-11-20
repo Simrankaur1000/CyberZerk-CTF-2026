@@ -1,4 +1,4 @@
-# The CFO's Safe
+# The CFO's Vault
 
 **Challenge title:** Le Coffre du DAF  
 **Category:** Cryptography  
