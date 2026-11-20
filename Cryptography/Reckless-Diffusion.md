@@ -1,4 +1,4 @@
-# Careless Diffusion
+# Reckless Diffusion
 
 **Challenge title:** Diffusion Imprudente  
 **Category:** Cryptography  
