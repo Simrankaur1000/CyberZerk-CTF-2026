@@ -1,4 +1,4 @@
-# The Military Cipher
+# Military Encryption
 
 **Challenge title:** Le Chiffrement Militaire  
 **Category:** Cryptography  
