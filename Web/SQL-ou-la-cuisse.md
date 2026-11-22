@@ -1,9 +1,9 @@
 # SQL or Thigh?
 
-**Challenge title:** SQL or Thigh?  
-**Category:** Web  
-**Difficulty:** Intro  
-**Points:** 100  
+**Challenge title:** L'SQL ou la cuisse ?\
+**Category:** Web\
+**Difficulty:** Intro\
+**Points:** 100\
 **Author:** Perceval
 
 ## File
