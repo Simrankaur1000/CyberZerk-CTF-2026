@@ -1,9 +1,10 @@
 # CyberZerk CTF 2026
 
-Private workspace for challenge notes, investigation records, and writeups from CyberZerk CTF 2026.
+A collection of challenge notes, technical investigations, scripts, and writeups from CyberZerk CTF 2026.
 
 > **Status:** In progress  
-> **Visibility:** This repository is private. Keep challenge solutions and flags confidential until the event has ended and the organizers permit publication.
+> **Visibility:** Public  
+> **Disclosure:** Challenge solutions and flags are shared only where publication is permitted by the organizers. Please respect the CTF rules and disclosure guidelines.
 
 ## Challenge categories
 
@@ -16,15 +17,18 @@ Private workspace for challenge notes, investigation records, and writeups from 
 | [Awareness](Awareness/) | Awareness-themed challenges |
 | [Miscellaneous](Miscellaneous/) | Challenges that do not fit the other categories |
 
-## Writeup format
+## Writeup structure
 
-For each challenge, document:
-- Challenge name and category
-- Problem statement / objective
-- Initial observations
+Where applicable, each challenge writeup may include:
+
+- Challenge name, category, difficulty, and points
+- Problem statement and objective
+- Initial observations and reconnaissance
 - Tools and methodology
-- Key steps and evidence
-- Flag (keep private until disclosure is permitted)
+- Reproducible steps, commands, and scripts
+- Results and key findings, subject to disclosure rules
 - Lessons learned
 
+## Disclaimer
 
+This repository is maintained for learning, research, and CTF participation. All testing is limited to authorized CTF environments. Challenge content, solutions, and flags are published in accordance with the event organizers' rules and disclosure requirements.
