@@ -1,4 +1,4 @@
-# Hasty Comparison
+# Early Comparison
 
 **Challenge title:** Comparaison Hâtive\
 **Category:** Web\
