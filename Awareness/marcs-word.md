@@ -1,10 +1,12 @@
-## Marc's Word
+## Le mot de Marc
 
-**Flag:** `CyberZerk{ESPOIR}`
-
+**Challenge title:** Le mot de Marc  
 **Category:** Awareness  
 **Difficulty:** Easy  
+**Points:** 1  
 **Author:** Perceval
+
+**Flag:** `CyberZerk{ESPOIR}`
 
 ### Solution
 
