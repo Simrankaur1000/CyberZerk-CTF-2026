@@ -1,4 +1,4 @@
-# Leave Balance Race Condition
+# Leave Balance 
 
 **Challenge title:** Solde de Congés\
 **Category:** Web\
