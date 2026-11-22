@@ -1,6 +1,6 @@
 # Phantom Timer
 
-**Challenge title:** Phantom Timer  
+**Challenge title:** Pointeuse Fantôme  
 **Category:** Web  
 **Difficulty:** Intro  
 **Points:** 50  
