@@ -27,10 +27,4 @@ For each challenge, document:
 - Flag (keep private until disclosure is permitted)
 - Lessons learned
 
-## Publication checklist
 
-- [ ] Confirm the CTF has ended.
-- [ ] Check the event rules and disclosure policy.
-- [ ] Remove any information the organizers prohibit from publishing.
-- [ ] Review screenshots, flags, and sensitive data.
-- [ ] Transfer approved writeups to the public `CTF-Writeups` repository.
